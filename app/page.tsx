@@ -17,7 +17,7 @@ import {
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="ml-10 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-2 items-center text-xl font-bold">
             <Code className="h-6 w-6 text-purple-500" />
@@ -34,7 +34,9 @@ export default function Home() {
               <Link href="#views" className="text-sm font-medium hover:text-primary">
                 Views
               </Link>
-              <Button>Install Extension</Button>
+              <Link href="https://marketplace.visualstudio.com/items?itemName=VincentDevalliere.interactive-course-extension&ssr=false#review-details" target="_blank" rel="noopener noreferrer">
+                  <Button>Install Extension</Button>
+              </Link>
             </nav>
           </div>
         </div>
@@ -53,12 +55,16 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
-                    Install Extension
-                  </Button>
-                  <Button size="lg" variant="outline">
-                    View Documentation
-                  </Button>
+                  <Link href="https://marketplace.visualstudio.com/items?itemName=VincentDevalliere.interactive-course-extension&ssr=false#overview" target="_blank" rel="noopener noreferrer">
+                     <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                      Install Extension
+                    </Button>
+                  </Link>
+                  <Link href="https://marketplace.visualstudio.com/items?itemName=VincentDevalliere.interactive-course-extension&ssr=false#overview" target="_blank" rel="noopener noreferrer">
+                     <Button size="lg" variant="outline">
+                      View Documentation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div className="mx-auto flex items-center justify-center rounded-xl border bg-background p-8 shadow-lg">
@@ -266,9 +272,11 @@ export default function Home() {
               Install LearnForge today and transform your VS Code into an interactive learning environment.
             </p>
             <div className="mt-8">
-              <Button size="lg" variant="secondary" className="bg-white text-purple-600 hover:bg-purple-50">
-                Install LearnForge Extension
-              </Button>
+              <Link href="https://marketplace.visualstudio.com/items?itemName=VincentDevalliere.interactive-course-extension&ssr=false#review-details" target="_blank" rel="noopener noreferrer">
+                <Button>                
+                    Install LearnForge Extension
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -279,15 +287,13 @@ export default function Home() {
             &copy; {new Date().getFullYear()} LearnForge. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="https://github.com/VincentBoillotDevalliere/" className="text-sm text-muted-foreground hover:text-foreground">
               GitHub
             </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="https://marketplace.visualstudio.com/items?itemName=VincentDevalliere.interactive-course-extension&ssr=false#review-details" className="text-sm text-muted-foreground hover:text-foreground">
               Documentation
             </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Privacy Policy
-            </Link>
+            
           </div>
         </div>
       </footer>
