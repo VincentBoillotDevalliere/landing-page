@@ -2,9 +2,14 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Interactive courses landing page',
+  description: 'A landing page for interactive courses extension for VSCode',
+  authors: [
+    {
+      name: 'VincentBoillotDevalliere',
+      url: 'https://github.com/VincentBoillotDevalliere'
+    }
+  ],
 }
 
 export default function RootLayout({
